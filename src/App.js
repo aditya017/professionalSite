@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import NavBar from "./components/NavBar";
+import HomePage from "./components/HomePage";
+import React, {useEffect, useState} from "react";
+import dayImage from "../src/static/images/goldenBridge.jpeg";
+import nightImage from "../src/static/images/nightTime.jpg";
+import santaMonicaDay from "../src/static/images/santaMonica.jpg";
+import caliNightSky from "../src/static/images/caliNightSky.jpg";
+import {useDispatch} from "react-redux";
+import {dayNightIdentifier} from "./store/features/DayTimeBlnSlice/dayTimeBlnSlice";
+import AboutMeInDepth from "./components/AboutMeInDepth";
+import SocialMedia from "./components/SocialMedia";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    const [isDay, setIsDay] = useState(false);
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        const currentTime = new Date().getHours();
+        setIsDay(currentTime >= 6 && currentTime < 19);
+        dispatch(dayNightIdentifier(isDay));
+    }, [isDay]);
+
+    return (
+        <>
+            <div id="appContent" style={{backgroundImage: `url(${isDay ? dayImage : nightImage})`}}>
+                <NavBar/>
+                <HomePage/>
+            </div>
+            <div id="appContent" style={{backgroundImage: `url(${isDay ? santaMonicaDay : caliNightSky})`}}>
+                <AboutMeInDepth/>
+                <SocialMedia/>
+            </div>
+        </>
+    );
 }
 
 export default App;
