@@ -1,7 +1,7 @@
+import React, {useEffect, useState} from "react";
 import './App.scss';
 import NavBar from "./components/NavBar";
 import HomePage from "./components/HomePage";
-import React, {useEffect, useState} from "react";
 import dayImage from "../src/static/images/goldenBridge.jpeg";
 import nightImage from "../src/static/images/nightTime.jpg";
 import santaMonicaDay from "../src/static/images/santaMonica.jpg";
