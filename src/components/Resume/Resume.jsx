@@ -74,21 +74,24 @@ const Resume = () => {
                             <p className="textDvcSty">{userDetails.education.col3}</p>
                             <div className="hdrTxtStyRgt">Experience:</div>
                             <p className="textDvcSty">{shortExp}</p>
-                            <div className="subHdr">Ford Motors: April 2021 - Till Date</div>
+                            <div className="subHdr">Ford Motors:</div>
+                            <div className="subHdr">April 2021 - Till Date,San Fransisco,CA.</div>
                             <p className="textDvcSty">{jobDescriptions.fordDes}</p>
                             <ul className="jstFnt">
                                 {fordRes.map((item, index) => (
                                     <li key={index}>{item}</li>
                                 ))}
                             </ul>
-                            <div className="subHdr">Centene Corporation: August 2018–April 2021</div>
+                            <div className="subHdr">Centene Corporation:</div>
+                            <div className="subHdr">Aug 2018–April 2021,Sacramento,CA.</div>
                             <p className="textDvcSty">{jobDescriptions.cntDes}</p>
                             <ul className="jstFnt">
                                 {centeneRes.map((item, index) => (
                                     <li key={index}>{item}</li>
                                 ))}
                             </ul>
-                            <div className="subHdr">Sabre Corporation: July 2016–June 2018</div>
+                            <div className="subHdr">Sabre Corporation:</div>
+                            <div className="subHdr">July 2016–June 2018,Dallas,TX.</div>
                             <p className="textDvcSty">{jobDescriptions.sbrDes}</p>
                             <ul className="jstFnt">
                                 {sabRes.map((item, index) => (

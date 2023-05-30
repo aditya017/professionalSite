@@ -1,13 +1,14 @@
 import React from 'react';
 import './Projects.scss';
 import NavBar from "../NavBar";
+import SocialMedia from "../SocialMedia";
 
 const Projects = () => {
 
     return (
-        <div>
+        <div className="projectPageSty">
             <NavBar/>
-            <p>Hello World</p>
+            <SocialMedia/>
         </div>
     )
 }
