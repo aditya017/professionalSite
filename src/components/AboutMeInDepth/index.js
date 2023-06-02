@@ -1,3 +1,3 @@
-import AboutMeInDepth from "./AboutMeInDepth";
+import AboutMeInDepth from './AboutMeInDepth';
 
 export default AboutMeInDepth;

@@ -1,3 +1,3 @@
-import RollOver from "./RollOver";
+import RollOver from './RollOver';
 
 export default RollOver;
