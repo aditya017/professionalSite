@@ -21,10 +21,10 @@ const NavBar = () => {
     navigate(path);
   };
 
-  const redirectToInstagram = () => {
+  /* const redirectToInstagram = () => {
     const url = '';
-   // window.open(url, '_blank');
-  };
+    window.open(url, '_blank');
+  };*/
 
   return (
     <AppBar
@@ -38,10 +38,10 @@ const NavBar = () => {
               onClick={() => navigateToRouteProvided('/')}
               sx={{ mr: 1, ml: 1, cursor: 'pointer' }}
             />
-            <TerrainIcon
+            {/*<TerrainIcon
               onClick={redirectToInstagram}
               sx={{ mr: 1, ml: 2, cursor: 'pointer' }}
-            />
+            />*/}
           </Toolbar>
         </Grid>
         <Grid xs={9} md={6}>

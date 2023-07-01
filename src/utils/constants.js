@@ -4,7 +4,7 @@ export const userDetails = {
   phone: '(515)-992-6592',
   education: {
     col1: 'MS Computer Engineering, Oklahoma University , 2015.',
-    col2: 'MS Computer Engineering, SIU Carbondale , 2014.',
+    col2: 'MS Computer Engineering, SIU Carbondale , 2014 (Collage transfer). ',
     col3: "Bachelor's in ECE, JNTU-Hyderabad , 2013.",
   },
 };
@@ -18,7 +18,7 @@ export const jobDescriptions = {
   sbrDes:
     'Worked on SIM (Sabre Identity Manager) which provides capabilities to airline and ticket agents based on their level of operations.',
   vanGuardDes:
-  'Worked on website redesign led to a more spread-out layout, increased scrolling, and easier-to-access information, which received positive feedBack from users.'
+    'Worked on website redesign led to a more spread-out layout, increased scrolling, and easier-to-access information, which received positive feedBack from users.',
 };
 export const coreTech = [
   'JavaScript',

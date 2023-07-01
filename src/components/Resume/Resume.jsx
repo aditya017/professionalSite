@@ -16,7 +16,8 @@ import {
   otherTech,
   sabRes,
   shortExp,
-  userDetails, vanGuardRes,
+  userDetails,
+  vanGuardRes,
 } from '../../utils/constants';
 
 const Resume = () => {
@@ -122,7 +123,7 @@ const Resume = () => {
                 ))}
               </ul>
               <div className="subHdr">Vanguard:</div>
-              <div className="subHdr">July 2016–June 2018,Dallas,TX.</div>
+              <div className="subHdr">Jan 2015–May 2016,Dallas,TX.</div>
               <p className="textDvcSty">{jobDescriptions.vanGuardDes}</p>
               <ul className="jstFnt">
                 {vanGuardRes.map((item, index) => (

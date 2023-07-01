@@ -12,15 +12,15 @@ const SocialMedia = () => {
     window.open(url, '_blank');
   };
 
-  const redirectToInstagram = () => {
+  /*  const redirectToInstagram = () => {
     const url = '';
-    //window.open(url, '_blank');
+    window.open(url, '_blank');
   };
 
   const redirectToTwitter = () => {
     const url = '';
-   // window.open(url, '_blank');
-  };
+    window.open(url, '_blank');
+  };*/
 
   const redirectToGitHub = () => {
     const url = 'https://github.com/aditya017';
@@ -42,7 +42,7 @@ const SocialMedia = () => {
           }}
         />
       </Tooltip>
-      <Tooltip title="Instagram" arrow>
+      {/*<Tooltip title="Instagram" arrow>
         <InstagramIcon
           onClick={redirectToInstagram}
           sx={{
@@ -67,7 +67,7 @@ const SocialMedia = () => {
             cursor: 'pointer',
           }}
         />
-      </Tooltip>
+      </Tooltip>*/}
       <Tooltip title="GitHub" arrow>
         <GitHubIcon
           onClick={redirectToGitHub}

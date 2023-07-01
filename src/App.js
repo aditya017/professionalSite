@@ -26,7 +26,7 @@ function App() {
     if (canWeRun) {
       timer = setTimeout(() => {
         dispatch(firstRunIdentifier(false));
-      }, 5000);
+      }, 3000);
     }
     return () => clearTimeout(timer);
   }, [isDay]);
